@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var newsList: [Article]?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
         newsListTable.separatorStyle = .none
         newsListTable.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsListTableViewCell")
         let refreshControl = UIRefreshControl()
@@ -46,6 +47,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let link = newsList?[indexPath.row].url, let controller = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailViewController") as? NewsDetailViewController {
+            controller.link = link
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }
 

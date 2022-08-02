@@ -26,6 +26,7 @@
 		38958D0328999001005945D9 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38958D0228999000005945D9 /* ApiClient.swift */; };
 		38958D052899901C005945D9 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38958D042899901C005945D9 /* ApiConstants.swift */; };
 		38958D07289990CC005945D9 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38958D06289990CC005945D9 /* ApiModel.swift */; };
+		38958D0A28999941005945D9 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38958D0928999941005945D9 /* NewsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		38958D0228999000005945D9 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		38958D042899901C005945D9 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		38958D06289990CC005945D9 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		38958D0928999941005945D9 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				38958CD52899814B005945D9 /* ViewController.swift */,
+				38958D0928999941005945D9 /* NewsDetailViewController.swift */,
 				38958D08289990F5005945D9 /* Networking */,
 			);
 			path = Screens;
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38958D0A28999941005945D9 /* NewsDetailViewController.swift in Sources */,
 				38958CD62899814B005945D9 /* ViewController.swift in Sources */,
 				38958CD22899814B005945D9 /* AppDelegate.swift in Sources */,
 				38958D052899901C005945D9 /* ApiConstants.swift in Sources */,
